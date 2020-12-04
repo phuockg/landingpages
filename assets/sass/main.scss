@@ -1,0 +1,21 @@
+@import "base/reset";
+@import "base/typography";
+
+@import "hepler/functions";
+@import "hepler/mixins";
+
+@import "components/buttons";
+
+@import "./layout/header";
+@import "./layout/section1";
+@import "./layout/section2";
+@import "./layout/footer";
+
+// @font-face {
+//   font-family: Mont-R;
+//   src: url(../fonts/Montserrat-Regular.ttf);
+// }
+
+// body {
+//   @include fontStyle(Mont-R, 1rem, #212529);
+// }

@@ -1,0 +1,16 @@
+{
+  "name": "04-12-2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch ./assets/sass/main.scss -o ./assets/css --source-map true",
+    "scss-build": "node-sass -o ./assets/css"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

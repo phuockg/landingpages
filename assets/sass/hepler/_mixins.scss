@@ -1,0 +1,94 @@
+//mixin lớp mặt nạ
+@mixin mask($zindex) {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: $zindex;
+}
+//mixin width height bằng nhau
+@mixin widthHeightEqual($element) {
+  width: $element;
+  height: $element;
+}
+//mixin flex-item
+@mixin itemFlexColumn($element) {
+  display: flex;
+  flex-direction: column;
+  align-items: $element;
+}
+@mixin itemFlexRow($element) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $element;
+}
+@mixin itemFlexJusContent($element) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $element;
+}
+//mixin font
+@mixin fontStyle($family, $size, $color) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+}
+//mixin position
+@mixin positionTopLeft($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+@mixin positionTopRight($position, $top, $right) {
+  position: $position;
+  top: $top;
+  right: $right;
+}
+@mixin positionBottomRight($position, $bottom, $right) {
+  position: $position;
+  bottom: $bottom;
+  right: $right;
+}
+@mixin positionBottomLeft($position, $bottom, $left) {
+  position: $position;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin background($bgColor, $width, $height) {
+  background-color: $bgColor;
+  width: $width;
+  height: $height;
+}
+@mixin line($bgColor, $width, $height) {
+  background-color: $bgColor;
+  width: $width;
+  height: $height;
+}
+@mixin widthHeight($w, $h) {
+  width: $w;
+  height: $h;
+}
+@mixin fontSlineH($font, $Lheight) {
+  font-size: $font;
+  line-height: $Lheight;
+}
+//highlight
+@mixin highlight($h, $bg-highlight, $bottom) {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: $h;
+    background-color: $bg-highlight;
+    bottom: $bottom;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}

@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #00c58e; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 42.5%; } }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, "Roboto", sans-serif;
+  margin: 0; }
+  body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    margin: 0; }
+
+p {
+  margin: 0; }
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh; }
+
+.header h1 {
+  color: blue; }
+
+.main .section-1__container {
+  width: 40%;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main .section-1__container__title {
+    text-align: center; }
+  .main .section-1__container p {
+    text-align: center;
+    display: inline-block; }
+  .main .section-1__container__highlight {
+    position: relative;
+    text-align: center;
+    display: inline-block; }
+    .main .section-1__container__highlight::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 50%;
+      background-color: red;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1; }
+
+.main .section-2__container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; }
+  .main .section-2__container__item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-left: 3px solid green; }
+    .main .section-2__container__item__text {
+      position: relative;
+      font-size: 1.2rem;
+      width: 100%;
+      box-sizing: border-box; }
+      .main .section-2__container__item__text p {
+        margin-left: 30px; }
+      .main .section-2__container__item__text::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: greenyellow;
+        left: 0;
+        top: 0%;
+        transform: translate(-58%, 0%); }
+      .main .section-2__container__item__text::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        background-color: red;
+        left: 0;
+        top: 0;
+        transform: translate(calc(-58% - 0.6px), calc(0% + 4px)); }
+
+.footer h1 {
+  color: red; }
+
+/*# sourceMappingURL=main.css.map */
